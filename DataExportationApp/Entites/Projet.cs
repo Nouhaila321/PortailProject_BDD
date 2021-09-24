@@ -12,16 +12,19 @@ namespace DataExportationApp.Entites
         public string libelle { get; set;}
         public string description { get; set;}
         public string code_wtr { get; set; }
-       
-        public List<Image> technologies { get; set; }
+        public string domaine { get; set; }
+        public string statut { get; set; }
+
+        public List<string> technologiesProjet { get; set; }
         public List<Image> galerie { get; set; }
         public List<string> thematiquesProjet { get; set; }
 
         public Projet()
         {
             this.thematiquesProjet = new List<string>();
-            this.technologies = new List<Image>();
+            this.technologiesProjet = new List<string>();
             this.galerie = new List<Image>();
+             
         }
 
   
